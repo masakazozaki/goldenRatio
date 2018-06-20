@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +12,68 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="goldenRatio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="duR-jl-CG4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                                <items>
+                                    <navigationItem title="黄金比" id="Mhx-7H-euB"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldenRatio.pdf" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-5R-aga">
+                                <rect key="frame" x="67.5" y="163.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="NN4-PI-ImK"/>
+                                    <constraint firstAttribute="width" constant="240" id="dO3-wB-UIN"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="a" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5x-xI-LUf">
+                                <rect key="frame" x="60" y="436.5" width="255" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="b" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIV-3x-fEV">
+                                <rect key="frame" x="60" y="501.5" width="255" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh7-5S-6UD">
+                                <rect key="frame" x="50" y="574.5" width="275" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wqJ-wp-UVb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="計算を実行">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oh7-5S-6UD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1rD-dA-2d2"/>
+                            <constraint firstItem="L5x-xI-LUf" firstAttribute="top" secondItem="LcR-5R-aga" secondAttribute="bottom" constant="33" id="2i9-iX-U1v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oh7-5S-6UD" secondAttribute="trailing" constant="50" id="IsU-pG-4Km"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kIV-3x-fEV" secondAttribute="trailing" constant="60" id="Qt6-fI-yLh"/>
+                            <constraint firstItem="duR-jl-CG4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S0f-v3-9MH"/>
+                            <constraint firstItem="duR-jl-CG4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wjc-HA-pVL"/>
+                            <constraint firstItem="duR-jl-CG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aZd-MY-d1j"/>
+                            <constraint firstItem="kIV-3x-fEV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLH-9v-Yc7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L5x-xI-LUf" secondAttribute="trailing" constant="60" id="ext-9x-O0C"/>
+                            <constraint firstItem="LcR-5R-aga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j5t-dq-DWE"/>
+                            <constraint firstItem="L5x-xI-LUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="na1-Jq-Iwq"/>
+                            <constraint firstItem="L5x-xI-LUf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qaA-bp-C51"/>
+                            <constraint firstItem="Oh7-5S-6UD" firstAttribute="top" secondItem="kIV-3x-fEV" secondAttribute="bottom" constant="33" id="qgA-EO-Icz"/>
+                            <constraint firstItem="kIV-3x-fEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="riC-89-MiF"/>
+                            <constraint firstItem="kIV-3x-fEV" firstAttribute="top" secondItem="L5x-xI-LUf" secondAttribute="bottom" constant="25" id="u2L-oJ-4R6"/>
+                            <constraint firstItem="LcR-5R-aga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="uaY-8P-kmE"/>
+                            <constraint firstItem="Oh7-5S-6UD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBA-YJ-gIL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +81,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="goldenRatio.pdf" width="16" height="16"/>
+    </resources>
 </document>

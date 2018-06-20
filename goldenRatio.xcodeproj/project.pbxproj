@@ -12,6 +12,7 @@
 		E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E726B32520DAAA18001A2BC0 /* Main.storyboard */; };
 		E726B32920DAAA1B001A2BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726B32820DAAA1B001A2BC0 /* Assets.xcassets */; };
 		E726B32C20DAAA1B001A2BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E726B32A20DAAA1B001A2BC0 /* LaunchScreen.storyboard */; };
+		E726B33420DAB551001A2BC0 /* goldenRatio.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E726B33320DAB551001A2BC0 /* goldenRatio.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E726B32820DAAA1B001A2BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E726B32B20DAAA1B001A2BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E726B32D20DAAA1B001A2BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E726B33320DAB551001A2BC0 /* goldenRatio.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = goldenRatio.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		E726B32020DAAA18001A2BC0 /* goldenRatio */ = {
 			isa = PBXGroup;
 			children = (
+				E726B33320DAB551001A2BC0 /* goldenRatio.pdf */,
 				E726B32120DAAA18001A2BC0 /* AppDelegate.swift */,
 				E726B32320DAAA18001A2BC0 /* ViewController.swift */,
 				E726B32520DAAA18001A2BC0 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 				E726B32C20DAAA1B001A2BC0 /* LaunchScreen.storyboard in Resources */,
 				E726B32920DAAA1B001A2BC0 /* Assets.xcassets in Resources */,
 				E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */,
+				E726B33420DAB551001A2BC0 /* goldenRatio.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
