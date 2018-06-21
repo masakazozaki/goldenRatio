@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calculater-->
+        <!--黄金比 Calc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="goldenRatio" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                                             <segment title="b"/>
                                         </segments>
                                         <connections>
-                                            <action selector="segmentControlTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAn-8c-WwV"/>
+                                            <action selector="segmentControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="ut7-7g-xyX"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNB-6C-5lG">
@@ -117,7 +117,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Calculater" largeTitleDisplayMode="always" id="wJs-La-LUP">
+                    <navigationItem key="navigationItem" title="黄金比 Calc" largeTitleDisplayMode="always" id="wJs-La-LUP">
                         <barButtonItem key="rightBarButtonItem" title="使い方" id="u3T-nb-Dny">
                             <connections>
                                 <segue destination="OQx-EW-iD4" kind="show" id="HWv-0M-ckr"/>
