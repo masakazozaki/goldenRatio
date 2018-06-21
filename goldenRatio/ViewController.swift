@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //        
 //    }
 
-    @IBAction func segmentControlTapped(sender: UISegmentedControl) {
+    @IBAction func segmentControlTapped(_ sender: UISegmentedControl) {
         
         switch sender.selectedSegmentIndex {
         case 0:
