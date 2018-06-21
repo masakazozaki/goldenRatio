@@ -15,9 +15,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var label: UILabel!
     @IBOutlet var segment: UISegmentedControl!
     
-    @IBAction func segmentControlTapped(_ sender: Any) {
+//    @IBAction func segmentControlTapped(_ sender: Any) {
+//        
+//        switch (sender as AnyObject).selectedSegmentIndex {
+//        case 0:
+//            equalA = true
+//        case 1:
+//            equalA = false
+//        default:
+//            equalA = true
+//        }
+//        
+//    }
+
+    @IBAction func segmentControlTapped(sender: UISegmentedControl) {
         
-        switch (sender as AnyObject).selectedSegmentIndex {
+        switch sender.selectedSegmentIndex {
         case 0:
             equalA = true
         case 1:
@@ -27,7 +40,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
     }
-    
     var goldenRatio = (1.0 + sqrt(5.0)) / 2
 
     var equalA = true
