@@ -20,6 +20,7 @@
 		E767E81620DE8D6500B41677 /* SceneKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81120DE8D6500B41677 /* SceneKitUtils.swift */; };
 		E767E81720DE8D6500B41677 /* TrackingState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81220DE8D6500B41677 /* TrackingState+Description.swift */; };
 		E767E81820DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */; };
+		E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81920DE997700B41677 /* goldenRatioAR.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E767E81120DE8D6500B41677 /* SceneKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKitUtils.swift; sourceTree = "<group>"; };
 		E767E81220DE8D6500B41677 /* TrackingState+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackingState+Description.swift"; sourceTree = "<group>"; };
 		E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
+		E767E81920DE997700B41677 /* goldenRatioAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldenRatioAR.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		E726B32020DAAA18001A2BC0 /* goldenRatio */ = {
 			isa = PBXGroup;
 			children = (
+				E767E81920DE997700B41677 /* goldenRatioAR.png */,
 				E726B33520DAF610001A2BC0 /* goldenRatioImage.png */,
 				E726B33320DAB551001A2BC0 /* goldenRatio.pdf */,
 				E726B32120DAAA18001A2BC0 /* AppDelegate.swift */,
@@ -159,6 +162,7 @@
 				E726B33620DAF610001A2BC0 /* goldenRatioImage.png in Resources */,
 				E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */,
 				E726B33420DAB551001A2BC0 /* goldenRatio.pdf in Resources */,
+				E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

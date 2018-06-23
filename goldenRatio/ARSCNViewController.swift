@@ -76,6 +76,12 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
         from.addChildNode(node)
         node.position = SCNVector3Make(-Float(Double(length) * goldenRatio) / 2, 0, -length / 2)
         from.look(at: to.position)
+        
+        let texture = UIImage(named: "goldenRatioAR")
+        let material = SCNMaterial()
+        material.diffuse.contents = texture
+        node.geometry?.materials = [material]
+        
         return node
     }
     
