@@ -51,7 +51,7 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
         startNode = nil
         endNode?.removeFromParentNode()
         endNode = nil
-        statusLabel.isHidden = true
+        statusLabel.text = "Mapping Space..."
     }
     
     private func putSphere(at pos: SCNVector3, color: UIColor) -> SCNNode {
@@ -70,7 +70,7 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
         
         let node = SCNNode()
         
-        let goldenRect = SCNBox(width: CGFloat(Double(length) * goldenRatio), height: 0.0, length: CGFloat(length), chamferRadius: 0)
+        let goldenRect = SCNBox(width: CGFloat(Double(length) * goldenRatio), height: 0.01, length: CGFloat(length), chamferRadius: 0)
         node.geometry = goldenRect
         
         from.addChildNode(node)
@@ -80,7 +80,10 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
         let texture = UIImage(named: "goldenRatioAR")
         let material = SCNMaterial()
         material.diffuse.contents = texture
-        node.geometry?.materials = [material]
+        
+        let white = SCNMaterial()
+        white.diffuse.contents = UIColor.white
+        node.geometry?.materials = [white, white, white, white, material, white]
         
         return node
     }
@@ -99,9 +102,9 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
             
             lineNode = drawLine(from: startNode, to: endNode, length: distance)
             
-            statusLabel.text = String(format: "Distance: %.2f [m]", distance)
+            statusLabel.text = String(format: "a: %.2f [m]", distance)
         } else {
-            startNode = putSphere(at: hitPos, color: UIColor.blue)
+            startNode = putSphere(at: hitPos, color: UIColor.arBlue)
             statusLabel.text = "Tap an end point"
         }
     }
@@ -111,8 +114,9 @@ class ARSCNViewController: UIViewController, ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
         guard let frame = sceneView.session.currentFrame else {return}
         DispatchQueue.main.async(execute: {
-            self.statusLabel.isHidden = !(frame.anchors.count > 0)
-            if self.startNode == nil {
+            if !(frame.anchors.count > 0) {
+                self.statusLabel.text = "Mapping Space..."
+            } else if self.startNode == nil {
                 self.statusLabel.text = "Tap a start point"
             }
         })

@@ -21,6 +21,13 @@
 		E767E81720DE8D6500B41677 /* TrackingState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81220DE8D6500B41677 /* TrackingState+Description.swift */; };
 		E767E81820DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */; };
 		E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81920DE997700B41677 /* goldenRatioAR.png */; };
+		E767E81C20DEA8DB00B41677 /* ARKit-Control-Label-Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */; };
+		E767E82020DEACF500B41677 /* ARKit-Control-Label-Icon_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */; };
+		E767E82120DEACF500B41677 /* ARKit-Control-Label-Icon_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */; };
+		E767E82220DEACF500B41677 /* ARKit-Control-Label-Icon_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */; };
+		E767E82620DEAEAC00B41677 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82320DEAEAA00B41677 /* calculator.png */; };
+		E767E82720DEAEAC00B41677 /* calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82420DEAEAB00B41677 /* calculator@2x.png */; };
+		E767E82820DEAEAC00B41677 /* calculator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82520DEAEAB00B41677 /* calculator@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		E767E81220DE8D6500B41677 /* TrackingState+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackingState+Description.swift"; sourceTree = "<group>"; };
 		E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
 		E767E81920DE997700B41677 /* goldenRatioAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldenRatioAR.png; sourceTree = "<group>"; };
+		E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ARKit-Control-Label-Icon.pdf"; sourceTree = "<group>"; };
+		E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_2x.png"; sourceTree = "<group>"; };
+		E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_1x.png"; sourceTree = "<group>"; };
+		E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_3x.png"; sourceTree = "<group>"; };
+		E767E82320DEAEAA00B41677 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
+		E767E82420DEAEAB00B41677 /* calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculator@2x.png"; sourceTree = "<group>"; };
+		E767E82520DEAEAB00B41677 /* calculator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculator@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,13 @@
 		E726B32020DAAA18001A2BC0 /* goldenRatio */ = {
 			isa = PBXGroup;
 			children = (
+				E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */,
+				E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */,
+				E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */,
+				E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */,
+				E767E82320DEAEAA00B41677 /* calculator.png */,
+				E767E82420DEAEAB00B41677 /* calculator@2x.png */,
+				E767E82520DEAEAB00B41677 /* calculator@3x.png */,
 				E767E81920DE997700B41677 /* goldenRatioAR.png */,
 				E726B33520DAF610001A2BC0 /* goldenRatioImage.png */,
 				E726B33320DAB551001A2BC0 /* goldenRatio.pdf */,
@@ -157,12 +178,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E767E82820DEAEAC00B41677 /* calculator@3x.png in Resources */,
+				E767E82720DEAEAC00B41677 /* calculator@2x.png in Resources */,
 				E726B32C20DAAA1B001A2BC0 /* LaunchScreen.storyboard in Resources */,
 				E726B32920DAAA1B001A2BC0 /* Assets.xcassets in Resources */,
+				E767E82220DEACF500B41677 /* ARKit-Control-Label-Icon_3x.png in Resources */,
 				E726B33620DAF610001A2BC0 /* goldenRatioImage.png in Resources */,
 				E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */,
+				E767E82120DEACF500B41677 /* ARKit-Control-Label-Icon_1x.png in Resources */,
 				E726B33420DAB551001A2BC0 /* goldenRatio.pdf in Resources */,
+				E767E82620DEAEAC00B41677 /* calculator.png in Resources */,
+				E767E81C20DEA8DB00B41677 /* ARKit-Control-Label-Icon.pdf in Resources */,
 				E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */,
+				E767E82020DEACF500B41677 /* ARKit-Control-Label-Icon_2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,9 +51,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func calcButtonTapped() {
         if equalA {
-            label.text = "bの長さ: " + String(calc(x: atof(textField.text)))
+            label.text = "b: " + String(calc(x: atof(textField.text)))
         } else {
-            label.text = "aの長さ: " + String(calc(x: atof(textField.text)))
+            label.text = "a: " + String(calc(x: atof(textField.text)))
         }
         
 
