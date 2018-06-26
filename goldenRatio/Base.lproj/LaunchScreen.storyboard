@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,38 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uzumaki" translatesAutoresizingMaskIntoConstraints="NO" id="uRx-S1-ryo">
+                                <rect key="frame" x="60" y="80" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uRx-S1-ryo" secondAttribute="height" multiplier="1:1" id="qpg-5z-Snb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golden Ratio AR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiX-48-Vzk">
+                                <rect key="frame" x="24.5" y="385" width="326" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94263213872909546" green="0.70243513584136963" blue="0.32931140065193176" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uRx-S1-ryo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Ae5-SP-D23"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uRx-S1-ryo" secondAttribute="trailing" constant="60" id="NuZ-QP-3cE"/>
+                            <constraint firstItem="yiX-48-Vzk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="etL-5K-SMn"/>
+                            <constraint firstItem="yiX-48-Vzk" firstAttribute="top" secondItem="uRx-S1-ryo" secondAttribute="bottom" constant="50" id="iSv-Er-Nuv"/>
+                            <constraint firstItem="uRx-S1-ryo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="mMW-jp-Pzh"/>
+                            <constraint firstItem="uRx-S1-ryo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ynk-2T-A0s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="uzumaki" width="1000" height="1000"/>
+    </resources>
 </document>
