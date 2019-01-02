@@ -12,7 +12,7 @@ private let reuseIdentifier = "RatioCell"
 
 class DecideRatioCollectionVeiwController: UICollectionViewController {
     
-    let ratioArray: [String] = ["GoldenRatio", "SilverRatio", "asdfRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio"]
+    let ratioArray: [String] = ["GoldenRatio", "SilverRatio", "asdfRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
