@@ -14,7 +14,6 @@ class ChooseRatioCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        layer.cornerRadius = 40.0
     }
 
 }

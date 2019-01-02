@@ -211,37 +211,83 @@
             </objects>
             <point key="canvasLocation" x="1024.8" y="-953.07346326836591"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Decide Ratio Collection Veiw Controller-->
         <scene sceneID="s5v-co-By6">
             <objects>
-                <collectionViewController id="75y-1H-umd" sceneMemberID="viewController">
+                <collectionViewController id="75y-1H-umd" customClass="DecideRatioCollectionVeiwController" customModule="goldenRatio" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F0W-yD-gCa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lDj-GT-Mzq">
-                            <size key="itemSize" width="171" height="148"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="25" sectionInsetReference="layoutMargins" id="lDj-GT-Mzq">
+                            <size key="itemSize" width="143" height="119"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RatioCell" id="CG3-fQ-2Yh" customClass="ChooseRatioCell" customModule="goldenRatio" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="171" height="148"/>
+                                <rect key="frame" x="28" y="8" width="143" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="171" height="148"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="143" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Riw-f3-aWv">
-                                            <rect key="frame" x="55" y="63" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Riw-f3-aWv">
+                                            <rect key="frame" x="10" y="88" width="133" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                             <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceA-yS-wrc">
+                                            <rect key="frame" x="5" y="78.5" width="133" height="0.5"/>
+                                            <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="0.29999999999999999" id="pPT-kh-FXU"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxU-VB-mLh">
+                                            <rect key="frame" x="0.0" y="60" width="138" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yxU-VB-mLh" secondAttribute="trailing" constant="5" id="49S-KU-P6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="Riw-f3-aWv" secondAttribute="trailing" id="DRm-I7-Pco"/>
+                                    <constraint firstAttribute="trailing" secondItem="ceA-yS-wrc" secondAttribute="trailing" constant="5" id="Oih-Nq-cfW"/>
+                                    <constraint firstAttribute="bottom" secondItem="ceA-yS-wrc" secondAttribute="bottom" constant="40" id="PVR-v5-fnE"/>
+                                    <constraint firstItem="ceA-yS-wrc" firstAttribute="leading" secondItem="CG3-fQ-2Yh" secondAttribute="leading" constant="5" id="aJf-VX-7jK"/>
+                                    <constraint firstItem="ceA-yS-wrc" firstAttribute="top" secondItem="yxU-VB-mLh" secondAttribute="bottom" constant="5" id="jfk-RY-7KY"/>
+                                    <constraint firstItem="yxU-VB-mLh" firstAttribute="leading" secondItem="CG3-fQ-2Yh" secondAttribute="leading" id="l3l-Pg-dvQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Riw-f3-aWv" secondAttribute="bottom" constant="10" id="pfG-KL-8Om"/>
+                                    <constraint firstItem="Riw-f3-aWv" firstAttribute="leading" secondItem="CG3-fQ-2Yh" secondAttribute="leading" constant="10" id="xIU-ju-H83"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="cellLabel" destination="Riw-f3-aWv" id="5AZ-Jz-lXQ"/>
                                 </connections>
