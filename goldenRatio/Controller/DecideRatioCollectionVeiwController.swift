@@ -12,7 +12,7 @@ import UIKit
 
 class DecideRatioCollectionVeiwController: UICollectionViewController {
     
-    let ratioArray: [String] = ["GoldenRatio", "SilverRatio", "asdfRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio"]
+    let ratioArray: [String] = ["GoldenRatio", "SilverRatio", "asdfRatio", "testRatio", "testRatio", "testRatio", "testRatio", "testRatio"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
