@@ -59,7 +59,6 @@ class DecideRatioCollectionVeiwController: UICollectionViewController {
     
         return cell
     }
-
     // MARK: UICollectionViewDelegate
 
     /*
