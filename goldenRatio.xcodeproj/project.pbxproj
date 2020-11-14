@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E726B32220DAAA18001A2BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726B32120DAAA18001A2BC0 /* AppDelegate.swift */; };
-		E726B32420DAAA18001A2BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726B32320DAAA18001A2BC0 /* ViewController.swift */; };
+		E726B32420DAAA18001A2BC0 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726B32320DAAA18001A2BC0 /* CalculatorViewController.swift */; };
 		E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E726B32520DAAA18001A2BC0 /* Main.storyboard */; };
 		E726B32920DAAA1B001A2BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E726B32820DAAA1B001A2BC0 /* Assets.xcassets */; };
 		E726B32C20DAAA1B001A2BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E726B32A20DAAA1B001A2BC0 /* LaunchScreen.storyboard */; };
@@ -21,19 +21,14 @@
 		E767E81720DE8D6500B41677 /* TrackingState+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81220DE8D6500B41677 /* TrackingState+Description.swift */; };
 		E767E81820DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */; };
 		E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81920DE997700B41677 /* goldenRatioAR.png */; };
-		E767E81C20DEA8DB00B41677 /* ARKit-Control-Label-Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */; };
-		E767E82020DEACF500B41677 /* ARKit-Control-Label-Icon_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */; };
-		E767E82120DEACF500B41677 /* ARKit-Control-Label-Icon_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */; };
-		E767E82220DEACF500B41677 /* ARKit-Control-Label-Icon_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */; };
-		E767E82620DEAEAC00B41677 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82320DEAEAA00B41677 /* calculator.png */; };
-		E767E82720DEAEAC00B41677 /* calculator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82420DEAEAB00B41677 /* calculator@2x.png */; };
-		E767E82820DEAEAC00B41677 /* calculator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E82520DEAEAB00B41677 /* calculator@3x.png */; };
+		E76D0671256048AB006614C0 /* CalculatorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76D0670256048AB006614C0 /* CalculatorViewController.storyboard */; };
+		E76D067425604A1D006614C0 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D067325604A1D006614C0 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E726B31E20DAAA18001A2BC0 /* goldenRatio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goldenRatio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E726B32120DAAA18001A2BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E726B32320DAAA18001A2BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E726B32320DAAA18001A2BC0 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		E726B32620DAAA18001A2BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E726B32820DAAA1B001A2BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E726B32B20DAAA1B001A2BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,13 +42,8 @@
 		E767E81220DE8D6500B41677 /* TrackingState+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TrackingState+Description.swift"; sourceTree = "<group>"; };
 		E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
 		E767E81920DE997700B41677 /* goldenRatioAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldenRatioAR.png; sourceTree = "<group>"; };
-		E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ARKit-Control-Label-Icon.pdf"; sourceTree = "<group>"; };
-		E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_2x.png"; sourceTree = "<group>"; };
-		E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_1x.png"; sourceTree = "<group>"; };
-		E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARKit-Control-Label-Icon_3x.png"; sourceTree = "<group>"; };
-		E767E82320DEAEAA00B41677 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
-		E767E82420DEAEAB00B41677 /* calculator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculator@2x.png"; sourceTree = "<group>"; };
-		E767E82520DEAEAB00B41677 /* calculator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calculator@3x.png"; sourceTree = "<group>"; };
+		E76D0670256048AB006614C0 /* CalculatorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorViewController.storyboard; sourceTree = "<group>"; };
+		E76D067325604A1D006614C0 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,20 +77,12 @@
 		E726B32020DAAA18001A2BC0 /* goldenRatio */ = {
 			isa = PBXGroup;
 			children = (
-				E767E81E20DEACF300B41677 /* ARKit-Control-Label-Icon_1x.png */,
-				E767E81D20DEACF100B41677 /* ARKit-Control-Label-Icon_2x.png */,
-				E767E81F20DEACF400B41677 /* ARKit-Control-Label-Icon_3x.png */,
-				E767E81B20DEA8DA00B41677 /* ARKit-Control-Label-Icon.pdf */,
-				E767E82320DEAEAA00B41677 /* calculator.png */,
-				E767E82420DEAEAB00B41677 /* calculator@2x.png */,
-				E767E82520DEAEAB00B41677 /* calculator@3x.png */,
+				E76D066E25604854006614C0 /* CalculatorView */,
+				E76D066D2560482D006614C0 /* ARSCNView */,
 				E767E81920DE997700B41677 /* goldenRatioAR.png */,
 				E726B33520DAF610001A2BC0 /* goldenRatioImage.png */,
 				E726B33320DAB551001A2BC0 /* goldenRatio.pdf */,
 				E726B32120DAAA18001A2BC0 /* AppDelegate.swift */,
-				E767E80C20DE8AA300B41677 /* ARSCNViewController.swift */,
-				E726B32320DAAA18001A2BC0 /* ViewController.swift */,
-				E726B32520DAAA18001A2BC0 /* Main.storyboard */,
 				E726B32820DAAA1B001A2BC0 /* Assets.xcassets */,
 				E726B32A20DAAA1B001A2BC0 /* LaunchScreen.storyboard */,
 				E726B32D20DAAA1B001A2BC0 /* Info.plist */,
@@ -116,8 +98,27 @@
 				E767E81120DE8D6500B41677 /* SceneKitUtils.swift */,
 				E767E81220DE8D6500B41677 /* TrackingState+Description.swift */,
 				E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */,
+				E76D067325604A1D006614C0 /* PaddingLabel.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E76D066D2560482D006614C0 /* ARSCNView */ = {
+			isa = PBXGroup;
+			children = (
+				E767E80C20DE8AA300B41677 /* ARSCNViewController.swift */,
+				E726B32520DAAA18001A2BC0 /* Main.storyboard */,
+			);
+			path = ARSCNView;
+			sourceTree = "<group>";
+		};
+		E76D066E25604854006614C0 /* CalculatorView */ = {
+			isa = PBXGroup;
+			children = (
+				E726B32320DAAA18001A2BC0 /* CalculatorViewController.swift */,
+				E76D0670256048AB006614C0 /* CalculatorViewController.storyboard */,
+			);
+			path = CalculatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,19 +179,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E767E82820DEAEAC00B41677 /* calculator@3x.png in Resources */,
-				E767E82720DEAEAC00B41677 /* calculator@2x.png in Resources */,
 				E726B32C20DAAA1B001A2BC0 /* LaunchScreen.storyboard in Resources */,
 				E726B32920DAAA1B001A2BC0 /* Assets.xcassets in Resources */,
-				E767E82220DEACF500B41677 /* ARKit-Control-Label-Icon_3x.png in Resources */,
 				E726B33620DAF610001A2BC0 /* goldenRatioImage.png in Resources */,
 				E726B32720DAAA18001A2BC0 /* Main.storyboard in Resources */,
-				E767E82120DEACF500B41677 /* ARKit-Control-Label-Icon_1x.png in Resources */,
+				E76D0671256048AB006614C0 /* CalculatorViewController.storyboard in Resources */,
 				E726B33420DAB551001A2BC0 /* goldenRatio.pdf in Resources */,
-				E767E82620DEAEAC00B41677 /* calculator.png in Resources */,
-				E767E81C20DEA8DB00B41677 /* ARKit-Control-Label-Icon.pdf in Resources */,
 				E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */,
-				E767E82020DEACF500B41677 /* ARKit-Control-Label-Icon_2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76D067425604A1D006614C0 /* PaddingLabel.swift in Sources */,
 				E767E81720DE8D6500B41677 /* TrackingState+Description.swift in Sources */,
-				E726B32420DAAA18001A2BC0 /* ViewController.swift in Sources */,
+				E726B32420DAAA18001A2BC0 /* CalculatorViewController.swift in Sources */,
 				E767E80D20DE8AA300B41677 /* ARSCNViewController.swift in Sources */,
 				E767E81420DE8D6500B41677 /* VirtualObjectNode.swift in Sources */,
 				E767E81620DE8D6500B41677 /* SceneKitUtils.swift in Sources */,
@@ -355,7 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R974FN29R;
 				INFOPLIST_FILE = goldenRatio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R974FN29R;
 				INFOPLIST_FILE = goldenRatio/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MBQ-2g-iii">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Augmented Reality-->
+        <scene sceneID="P81-CH-tUb">
+            <objects>
+                <viewController id="MBQ-2g-iii" customClass="ARSCNViewController" customModule="goldenRatio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jag-kS-f5K">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S4-qJ-KXj">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjm-fX-qbB" customClass="PaddingLabel" customModule="goldenRatio" customModuleProvider="target">
+                                <rect key="frame" x="175.33333333333334" y="132" width="39.666666666666657" height="38"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="5bW-Z2-eUn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkG-pm-8T2">
+                                <rect key="frame" x="282" y="60" width="80" height="48"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7Aa-gr-PwN"/>
+                                    <constraint firstAttribute="height" constant="48" id="A6b-dh-56P"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="trash" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="MBQ-2g-iii" eventType="touchUpInside" id="qU7-na-Vj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptR-z2-MF2">
+                                <rect key="frame" x="28" y="60" width="80" height="48"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MSY-Zf-vxi"/>
+                                    <constraint firstAttribute="height" constant="48" id="luC-1j-HlG"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="function" catalog="system" symbolScale="medium"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u3Y-UD-jhe" kind="presentation" id="Ird-W0-0a3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WQg-qN-PIn"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kjm-fX-qbB" firstAttribute="centerX" secondItem="jag-kS-f5K" secondAttribute="centerX" id="7j8-Nr-tRO"/>
+                            <constraint firstItem="Kjm-fX-qbB" firstAttribute="top" secondItem="WQg-qN-PIn" secondAttribute="top" constant="88" id="Cet-np-qSF"/>
+                            <constraint firstItem="6S4-qJ-KXj" firstAttribute="top" secondItem="jag-kS-f5K" secondAttribute="top" id="Dic-ta-qpC"/>
+                            <constraint firstItem="ptR-z2-MF2" firstAttribute="top" secondItem="WQg-qN-PIn" secondAttribute="top" constant="16" id="Jmk-si-I29"/>
+                            <constraint firstItem="6S4-qJ-KXj" firstAttribute="leading" secondItem="WQg-qN-PIn" secondAttribute="leading" id="Wwy-ti-yuh"/>
+                            <constraint firstItem="dkG-pm-8T2" firstAttribute="top" secondItem="WQg-qN-PIn" secondAttribute="top" constant="16" id="Yac-O6-mWd"/>
+                            <constraint firstItem="WQg-qN-PIn" firstAttribute="trailing" secondItem="6S4-qJ-KXj" secondAttribute="trailing" id="izm-Op-tKY"/>
+                            <constraint firstItem="WQg-qN-PIn" firstAttribute="trailing" secondItem="dkG-pm-8T2" secondAttribute="trailing" constant="28" id="mdj-Yu-6Ao"/>
+                            <constraint firstItem="ptR-z2-MF2" firstAttribute="leading" secondItem="WQg-qN-PIn" secondAttribute="leading" constant="28" id="tRj-d2-GTo"/>
+                            <constraint firstAttribute="bottom" secondItem="6S4-qJ-KXj" secondAttribute="bottom" id="yYI-10-18a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Augmented Reality" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="Cer-9R-i73"/>
+                    <connections>
+                        <outlet property="calculatorButton" destination="ptR-z2-MF2" id="04T-hx-zky"/>
+                        <outlet property="resetButton" destination="dkG-pm-8T2" id="t8G-Hy-3MA"/>
+                        <outlet property="sceneView" destination="6S4-qJ-KXj" id="Igq-Ua-bPf"/>
+                        <outlet property="statusLabel" destination="Kjm-fX-qbB" id="HCd-FR-ADb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fue-LY-J4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="-953.07346326836591"/>
+        </scene>
+        <!--CalculatorViewController-->
+        <scene sceneID="tdj-Cx-t18">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CalculatorViewController" id="u3Y-UD-jhe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oI6-Fc-tvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="-953"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="function" catalog="system" width="128" height="70"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

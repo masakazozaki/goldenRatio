@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2YE-bn-7Ih">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator-->
+        <scene sceneID="1nm-JC-Rga">
+            <objects>
+                <viewController id="2YE-bn-7Ih" customClass="CalculatorViewController" customModule="goldenRatio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="88P-WU-Qep">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goldenRatioImage.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcV-LE-CaN">
+                                <rect key="frame" x="34.5" y="64" width="345" height="345"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YcV-LE-CaN" secondAttribute="height" multiplier="1:1" id="KIF-0p-m8k"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="919-4W-XjD">
+                                <rect key="frame" x="100" y="424" width="214" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="xpH-08-K66"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="a"/>
+                                    <segment title="b"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlTapped:" destination="2YE-bn-7Ih" eventType="valueChanged" id="wPZ-20-fit"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GD-pI-Kj6">
+                                <rect key="frame" x="10" y="814" width="394" height="38"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="IwH-Co-ciY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULx-Ns-TEG">
+                                <rect key="frame" x="60" y="524" width="294" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qDS-kn-yuY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Process">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calcButtonTapped" destination="2YE-bn-7Ih" eventType="touchUpInside" id="hbq-tU-EcA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the side you chose." clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uTW-Bf-mPs">
+                                <rect key="frame" x="50" y="465" width="314" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cl9-pi-vir"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TPZ-5l-IEh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3GD-pI-Kj6" firstAttribute="centerX" secondItem="88P-WU-Qep" secondAttribute="centerX" id="1IV-rJ-FbS"/>
+                            <constraint firstItem="919-4W-XjD" firstAttribute="leading" secondItem="TPZ-5l-IEh" secondAttribute="leading" constant="100" id="1p7-p0-hx4"/>
+                            <constraint firstItem="919-4W-XjD" firstAttribute="centerX" secondItem="88P-WU-Qep" secondAttribute="centerX" id="1uc-hW-77m"/>
+                            <constraint firstItem="uTW-Bf-mPs" firstAttribute="leading" secondItem="TPZ-5l-IEh" secondAttribute="leading" constant="50" id="54i-8G-Yae"/>
+                            <constraint firstItem="YcV-LE-CaN" firstAttribute="top" secondItem="TPZ-5l-IEh" secondAttribute="top" constant="20" id="BVI-jt-7fs"/>
+                            <constraint firstItem="TPZ-5l-IEh" firstAttribute="bottom" secondItem="3GD-pI-Kj6" secondAttribute="bottom" constant="10" id="Bk3-Qy-LLT"/>
+                            <constraint firstItem="TPZ-5l-IEh" firstAttribute="trailing" secondItem="919-4W-XjD" secondAttribute="trailing" constant="100" id="H2M-Tu-8eD"/>
+                            <constraint firstItem="ULx-Ns-TEG" firstAttribute="centerX" secondItem="88P-WU-Qep" secondAttribute="centerX" id="JWe-nj-ddN"/>
+                            <constraint firstItem="TPZ-5l-IEh" firstAttribute="trailing" secondItem="ULx-Ns-TEG" secondAttribute="trailing" constant="60" id="Kxo-JH-gSr"/>
+                            <constraint firstItem="YcV-LE-CaN" firstAttribute="width" relation="lessThanOrEqual" secondItem="88P-WU-Qep" secondAttribute="width" multiplier="1:1.2" id="NpM-w4-4rg"/>
+                            <constraint firstItem="uTW-Bf-mPs" firstAttribute="centerX" secondItem="88P-WU-Qep" secondAttribute="centerX" id="PJ2-bS-3nh"/>
+                            <constraint firstItem="TPZ-5l-IEh" firstAttribute="trailing" secondItem="3GD-pI-Kj6" secondAttribute="trailing" constant="10" id="Yeh-O9-Qf6"/>
+                            <constraint firstItem="3GD-pI-Kj6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ULx-Ns-TEG" secondAttribute="bottom" constant="8" id="eTE-Lo-LEc"/>
+                            <constraint firstItem="TPZ-5l-IEh" firstAttribute="trailing" secondItem="uTW-Bf-mPs" secondAttribute="trailing" constant="50" id="fyx-XJ-nAW"/>
+                            <constraint firstItem="YcV-LE-CaN" firstAttribute="centerX" secondItem="88P-WU-Qep" secondAttribute="centerX" id="kYC-qh-XR6"/>
+                            <constraint firstItem="ULx-Ns-TEG" firstAttribute="top" secondItem="uTW-Bf-mPs" secondAttribute="bottom" constant="15" id="kpT-2n-cEC"/>
+                            <constraint firstItem="uTW-Bf-mPs" firstAttribute="top" secondItem="919-4W-XjD" secondAttribute="bottom" constant="10" id="lYl-wR-eTm"/>
+                            <constraint firstItem="3GD-pI-Kj6" firstAttribute="leading" secondItem="TPZ-5l-IEh" secondAttribute="leading" constant="10" id="sCZ-uN-T4i"/>
+                            <constraint firstItem="ULx-Ns-TEG" firstAttribute="leading" secondItem="TPZ-5l-IEh" secondAttribute="leading" constant="60" id="ueW-nS-tqE"/>
+                            <constraint firstItem="919-4W-XjD" firstAttribute="top" secondItem="YcV-LE-CaN" secondAttribute="bottom" constant="15" id="wB6-D4-M8a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculator" largeTitleDisplayMode="always" id="gi0-k3-C85"/>
+                    <connections>
+                        <outlet property="label" destination="3GD-pI-Kj6" id="3LY-Xe-Vzb"/>
+                        <outlet property="segment" destination="919-4W-XjD" id="eV0-07-5pl"/>
+                        <outlet property="textField" destination="uTW-Bf-mPs" id="CEx-vg-cdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JW2-Hh-x4z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318" y="-953"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goldenRatioImage.png" width="1000" height="1000"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
