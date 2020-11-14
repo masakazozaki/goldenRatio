@@ -22,6 +22,7 @@
 		E767E81820DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */; };
 		E767E81A20DE997800B41677 /* goldenRatioAR.png in Resources */ = {isa = PBXBuildFile; fileRef = E767E81920DE997700B41677 /* goldenRatioAR.png */; };
 		E76D0671256048AB006614C0 /* CalculatorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76D0670256048AB006614C0 /* CalculatorViewController.storyboard */; };
+		E76D067425604A1D006614C0 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76D067325604A1D006614C0 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPlaneAnchor+Visualize.swift"; sourceTree = "<group>"; };
 		E767E81920DE997700B41677 /* goldenRatioAR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goldenRatioAR.png; sourceTree = "<group>"; };
 		E76D0670256048AB006614C0 /* CalculatorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CalculatorViewController.storyboard; sourceTree = "<group>"; };
+		E76D067325604A1D006614C0 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				E767E81120DE8D6500B41677 /* SceneKitUtils.swift */,
 				E767E81220DE8D6500B41677 /* TrackingState+Description.swift */,
 				E767E81320DE8D6500B41677 /* ARPlaneAnchor+Visualize.swift */,
+				E76D067325604A1D006614C0 /* PaddingLabel.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76D067425604A1D006614C0 /* PaddingLabel.swift in Sources */,
 				E767E81720DE8D6500B41677 /* TrackingState+Description.swift in Sources */,
 				E726B32420DAAA18001A2BC0 /* CalculatorViewController.swift in Sources */,
 				E767E80D20DE8AA300B41677 /* ARSCNViewController.swift in Sources */,
